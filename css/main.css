@@ -921,6 +921,10 @@ button {
   width: 100%;
   height: 100%;
   background-color: bisque;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__container {
@@ -936,7 +940,7 @@ button {
 .mobile-menu__close-btn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 25px;
   padding: 0;
 }
 
@@ -947,8 +951,8 @@ button {
 }
 
 .mobile-menu__close-icon {
-  width: 40px;
-  height: 40px;
+  width: 18px;
+  height: 18px;
 }
 
 .mobile-menu__nav {
@@ -1004,11 +1008,11 @@ button {
   align-items: center;
   justify-content: space-around;
   margin-top: 32px;
-  padding-left: 10px;
+  padding-left: 17px;
 }
 
 .mobile-menu__social-app-list-item {
-  color: var(--text-color);
+  color: var(--focus-color);
 }
 .mobile-menu__social-app-list-item {
   font-family: Roboto, sans-serif;
@@ -1017,4 +1021,16 @@ button {
   line-height: 22px;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+.mobile-menu__line {
+  width: 1px;
+  height: 22px;
+  background-color: var(--text-color);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }/*# sourceMappingURL=main.css.map */
