@@ -46,25 +46,25 @@
 
 .site-hero {
   min-height: 600px;
-  background-image: url(/images/background-image.png);
+  background-image: url(../images/background-image.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
   .site-hero {
-    background-image: url(/images/background.jpg);
+    background-image: url(../images/background.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .site-hero {
-    background-image: url(/images/background-tablet.jpg);
+    background-image: url(../images/background-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site-hero {
-    background-image: url(/images/background-image.png);
+    background-image: url(../images/background-image.png);
   }
 }
