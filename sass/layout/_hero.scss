@@ -1,19 +1,59 @@
+.hero-title {
+  font-family: Roboto, sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+.hero-button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+.h3-title {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--text-color);
+}
+.site-hero {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  border: none;
+  & {
+    background-color: var(--focus-color);
+    color: #ffffff;
+  }
+}
+
 .site-hero {
   min-height: 600px;
   background-image: url(/images/background-image.png);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 }
 @media screen and (max-width: 767px) {
   .site-hero {
     background-image: url(/images/background.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .site-hero {
-    background-image: url(/images/background-image2@.jpg);
   }
 }
 
@@ -23,24 +63,8 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .site-hero {
-    background-image: url(/images/background-tablet@2x.jpg);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .site-hero {
     background-image: url(/images/background-image.png);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1200px),
-  screen and (min-resolution: 192dpi) and (max-width: 1200px),
-  screen and (min-resolution: 2dppx) and (max-width: 1200px) {
-  .site-hero {
-    background-image: url(/images/background-image2@.jpg);
   }
 }
